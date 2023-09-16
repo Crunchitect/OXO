@@ -1,3 +1,3 @@
 # OXO
 
-A tic-tac-toe in "Jet Lag" style.
+Tic-Tac-Toe in Jet Lag style
