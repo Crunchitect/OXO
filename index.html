@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" scroll="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,25 +10,49 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
+
+    <!-- Font Awesome Stuff -->
+    <script src="https://kit.fontawesome.com/c38c981af0.js" crossorigin="anonymous"></script>
     
     <!-- Our Own Stuff -->
     <link rel="stylesheet" href="stuffs/styles.css">
-    <title>Document</title>
+    <title>OXO - Home</title>
 </head>
-<body>
-    <div id="map"></div>
+<body scroll="no">
+    <div id="map" scroll="no"></div>
     <script src="stuffs/main.js" defer></script>
     <div class="vert-flex">
         <div class="stripe" id="logo">
             <img src="stuffs/logo.png" alt="logo">
         </div>
         <div class="center-flex stripe main">
-            <input placeholder="Username">
+            <input placeholder="Nickname">
             <input placeholder="Game ID">
             <button class="big white outlined transparent">
                 PLAY
             </button>
         </div>
+    </div>
+    <br>
+    <div class="flex-row">
+        <button class="special" id="host">
+            <i class="fa-solid fa-server"></i>
+            <br>
+            <h5 style="margin: 0;">Host Game</h5>
+        </button>
+        <button class="special" id="editor">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <br>
+            <h5 style="margin: 0;">Editor</h5>
+        </button>
+        <button class="special" id="sign-out">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <br>
+            <h5 style="margin: 0;">Sign Out</h5>
+        </button>
+    </div>
+    <div class="flex-row">
+        <h1>Signed in as <span id="username"></span></h1>
     </div>
 </body>
 </html>
