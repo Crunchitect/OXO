@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@font-face {
+    font-family: "Main";
+    src: url('accent-font.otf');
+}
 
 html, body {
     height: 100%;
@@ -15,7 +18,7 @@ html, body {
 }
 
 * {
-    font-family: "Russo One", sans-serif;
+    font-family: "Main", sans-serif;
 }
 
 #logo {
