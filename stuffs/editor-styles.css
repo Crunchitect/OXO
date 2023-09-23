@@ -28,12 +28,14 @@ body {
 
 .flex-left {
     display: flex;
+    flex-grow: 1;
     flex-flow: row nowrap;
 }
 
 .flex-right {
     display: flex;
     flex-flow: row-reverse nowrap;
+    flex-grow: 1;
 }
 
 #navbar > * {
@@ -52,15 +54,24 @@ body {
     font-size: larger;
 }
 
+.half {
+    width: 50%;
+}
+
 #edit-name-dialog-container {
     width: 100%;
     height: 100%;
 }
 
-dialog {
+dialog, .section {
     background-color: #222;
+    padding: 5vw;
 }
 
-button {
+button, .subsection {
     background-color: #333;
+}
+
+.subsubsection {
+    background-color: #444;
 }
