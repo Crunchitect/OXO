@@ -70,8 +70,21 @@ dialog, .section {
 
 button, .subsection {
     background-color: #333;
+    padding: 3vw;
 }
 
 .subsubsection {
     background-color: #444;
+    padding: 2vw;
+}
+
+.subsubsubsection {
+    background-color: #555;
+    padding: 1vw;
+}
+
+.grid {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
 }
